@@ -35,8 +35,8 @@ class App extends React.Component<
   displayType(statusMessage: StatusMessage, icon: string) {
     return this.state.tasks
       .filter(task => task.status.display === statusMessage)
-      .map(task => (
-        <Task update={() => this.updateFromModel()} TaskEntity={task} />
+      .map((task, i) => (
+        <Task update={() => this.updateFromModel()} TaskEntity={task} key={task.name + i}/>
       ));
   }
 
