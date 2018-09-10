@@ -3,8 +3,6 @@ import { render } from "react-dom";
 import Task from "./Task";
 import TaskEntity, { StatusMessage } from "./Business_Logic_Model/TaskEntity";
 
-import * as faker from "faker";
-
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
